@@ -14,7 +14,7 @@ def function_composition(x)
 
 x = [f1(x), f2(x), f3(x), ..., fN(x)]
 
-For example:
+For example:  
 f(x) = x + 3  
 g(x) = x^2  
 Then the return of function_composition is:  

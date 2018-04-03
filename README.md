@@ -3,17 +3,18 @@ Function composition method in python. This is an example when the reduce operat
 
 ## Description
 The python function accepts a list of lambda functions as the functions argument.  
-The first function in the list is the innermost function, which is then the input the the next function in the list, and so on. For example:
-def function_composition(x)
-    output1 = f1(x)
-    output2 = f2(output1) = f2(f1(x))
-    output3 = f3(output2) = f3(f2(f1(x)))
-    ...
-    outputN = fN(outputN-1) = fN(fN-1(...(f3(f2(f1(x))))))
-    return outputN
-
-x = [f1(x), f2(x), f3(x), ..., fN(x)]
-
+The first function in the list is the innermost function, which is then the input the the next function in the list, and so on.   
+For example:  
+def function_composition(x)  
+    output1 = f1(x)  
+    output2 = f2(output1) = f2(f1(x))  
+    output3 = f3(output2) = f3(f2(f1(x)))  
+    ...  
+    outputN = fN(outputN-1) = fN(fN-1(...(f3(f2(f1(x))))))  
+    return outputN  
+  
+x = [f1(x), f2(x), f3(x), ..., fN(x)]  
+  
 For example:  
 f(x) = x + 3  
 g(x) = x^2  
